@@ -1,0 +1,55 @@
+{
+  "name": "user",
+  "plural": "users",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Nom": {
+      "type": "string",
+      "required": true
+    },
+    "Prenom": {
+      "type": "string",
+      "required": true
+    },
+    "Mail": {
+      "type": "string",
+      "required": true
+    },
+    "DateNaissance": {
+      "type": "date"
+    },
+    "Matricule": {
+      "type": "string"
+    },
+    "Password": {
+      "type": "string",
+      "required": true
+    },
+    "StatutCarte": {
+      "type": "string",
+      "required": true
+    },
+    "Ycoin": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "Photo": {
+      "type": "string"
+    },
+    "Formation": {
+      "type": "string"
+    },
+    "Telephone": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

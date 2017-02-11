@@ -1,0 +1,23 @@
+{
+  "name": "Participant",
+  "plural": "Participants",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Code": {
+      "type": "string"
+    },
+    "Scan": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

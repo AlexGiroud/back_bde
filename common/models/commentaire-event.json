@@ -1,0 +1,22 @@
+{
+  "name": "CommentaireEvent",
+  "plural": "CommentairesEvent",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Message": {
+      "type": "string",
+      "required": true
+    },
+    "Date": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

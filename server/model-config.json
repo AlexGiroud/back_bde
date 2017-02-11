@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "user": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Event": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "CategorieEvent": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "CommentaireEvent": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Commande": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Participant": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Badge": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Droit": {
+    "dataSource": "mongo",
+    "public": true
+  }
+}

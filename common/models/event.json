@@ -1,0 +1,43 @@
+{
+  "name": "Event",
+  "plural": "Events",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Nom": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "string"
+    },
+    "Prix": {
+      "type": "number"
+    },
+    "DateEvent": {
+      "type": "date"
+    },
+    "DateDebutInscription": {
+      "type": "date"
+    },
+    "DateFinInscription": {
+      "type": "date"
+    },
+    "Photo": {
+      "type": "string"
+    },
+    "Adresse": {
+      "type": "string"
+    },
+    "DateCreation": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
