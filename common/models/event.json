@@ -37,7 +37,36 @@
     }
   },
   "validations": [],
-  "relations": {},
-  "acls": [],
+  "relations": {
+    "commentaireEvents": {
+      "type": "hasMany",
+      "model": "CommentaireEvent",
+      "foreignKey": ""
+    },
+    "categorieEvents": {
+      "type": "hasAndBelongsToMany",
+      "model": "CategorieEvent",
+      "foreignKey": ""
+    },
+    "participants": {
+      "type": "hasMany",
+      "model": "Participant",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    }
+  ],
   "methods": {}
 }
