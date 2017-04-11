@@ -63,5 +63,9 @@
   "Droit": {
     "dataSource": "mongo",
     "public": true
+  },
+  "student": {
+    "dataSource": "mongo",
+    "public": true
   }
 }

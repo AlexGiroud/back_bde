@@ -1,0 +1,78 @@
+{
+  "name": "student",
+  "plural": "students",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "lastname": {
+      "type": "string",
+      "required": true
+    },
+    "firstname": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "birthdate": {
+      "type": "date"
+    },
+    "studentId": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string",
+      "required": true
+    },
+    "cardStatus": {
+      "type": "string",
+      "required": true
+    },
+    "Ycoin": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "picture": {
+      "type": "string"
+    },
+    "formation": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "commentaireEvents": {
+      "type": "hasMany",
+      "model": "CommentaireEvent",
+      "foreignKey": ""
+    },
+    "badges": {
+      "type": "hasMany",
+      "model": "Badge",
+      "foreignKey": ""
+    },
+    "droits": {
+      "type": "hasMany",
+      "model": "Droit",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "GRANT"
+    }
+  ],
+  "methods": {}
+}
