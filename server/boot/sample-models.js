@@ -7,6 +7,7 @@ module.exports = function(app) {
     var User = app.models.student;
     var Role = app.models.Role;
     var RoleMapping = app.models.RoleMapping;
+    var Event = app.models.Event;
 
     User.create([
         {
@@ -49,4 +50,63 @@ module.exports = function(app) {
             });
         });
     });
+
+    Event.create([
+          {
+            "Nom": "Degustation de vin",
+            "Description": "string",
+            "Prix": 50,
+            "DateEvent": "2017-04-14T18:29:11.511Z",
+            "DateDebutInscription": "2017-04-14T18:29:11.511Z",
+            "DateFinInscription": "2017-04-14T18:29:11.511Z",
+            "Photo": "public/img/degustation_vin.jpg",
+            "Adresse": "string",
+            "DateCreation": "2017-04-14T18:29:11.511Z",
+          }
+        ], function(err, events) {
+        if (err) throw err;
+
+        console.log('Created events:', events);
+
+    });
+
+    Event.create([
+      {
+        "Nom": "Soirée Erasmus - Crazy Rabbit",
+        "Description": "string",
+        "Prix": 50,
+        "DateEvent": "2017-04-14T18:29:11.511Z",
+        "DateDebutInscription": "2017-04-14T18:29:11.511Z",
+        "DateFinInscription": "2017-04-14T18:29:11.511Z",
+        "Photo": "public/img/erasmus_crazy_rabbit.jpg",
+        "Adresse": "string",
+        "DateCreation": "2017-04-14T18:29:11.511Z",
+      }
+    ], function(err, events) {
+    if (err) throw err;
+
+    console.log('Created events:', events);
+
+    });
+
+    Event.create([
+      {
+        "Nom": "Soirée Erasmus - Flower Power",
+        "Description": "string",
+        "Prix": 50,
+        "DateEvent": "2017-04-14T18:29:11.511Z",
+        "DateDebutInscription": "2017-04-14T18:29:11.511Z",
+        "DateFinInscription": "2017-04-14T18:29:11.511Z",
+        "Photo": "public/img/erasmus_flower_power.jpg",
+        "Adresse": "string",
+        "DateCreation": "2017-04-14T18:29:11.511Z",
+      }
+    ], function(err, events) {
+    if (err) throw err;
+
+    console.log('Created events:', events);
+
+    });
 };
+
+
