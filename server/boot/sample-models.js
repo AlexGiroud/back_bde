@@ -8,6 +8,7 @@ module.exports = function(app) {
     var Role = app.models.Role;
     var RoleMapping = app.models.RoleMapping;
     var Event = app.models.Event;
+    var Commande = app.models.Commande;
 
     User.create([
         {
@@ -18,7 +19,7 @@ module.exports = function(app) {
             "studentId": "string",
             "cardStatus": "string",
             "Ycoin": 0,
-            "picture": "string",
+            "picture": "public/img/avatar5.png",
             "formation": "string",
             "phone": 0,
             "realm": "string",
@@ -106,6 +107,107 @@ module.exports = function(app) {
 
     console.log('Created events:', events);
 
+    });
+
+    Event.create([
+          {
+            "Nom": "Spring Break 2017",
+            "Description": "string",
+            "Prix": 50,
+            "DateEvent": "2017-04-14T18:29:11.511Z",
+            "DateDebutInscription": "2017-04-14T18:29:11.511Z",
+            "DateFinInscription": "2017-04-14T18:29:11.511Z",
+            "Photo": "public/img/salou.jpg",
+            "Adresse": "string",
+            "DateCreation": "2017-04-14T18:29:11.511Z",
+          }
+        ], function(err, events) {
+        if (err) throw err;
+
+        console.log('Created events:', events);
+
+    });
+
+    Event.create([
+      {
+        "Nom": "Soirée Saint Patrick",
+        "Description": "string",
+        "Prix": 50,
+        "DateEvent": "2017-04-14T18:29:11.511Z",
+        "DateDebutInscription": "2017-04-14T18:29:11.511Z",
+        "DateFinInscription": "2017-04-14T18:29:11.511Z",
+        "Photo": "public/img/saintPatrick.jpg",
+        "Adresse": "string",
+        "DateCreation": "2017-04-14T18:29:11.511Z",
+      }
+    ], function(err, events) {
+    if (err) throw err;
+
+    console.log('Created events:', events);
+
+    });
+
+    Event.create([
+      {
+        "Nom": "Soirée Jeu de rôle",
+        "Description": "string",
+        "Prix": 50,
+        "DateEvent": "2017-04-14T18:29:11.511Z",
+        "DateDebutInscription": "2017-04-14T18:29:11.511Z",
+        "DateFinInscription": "2017-04-14T18:29:11.511Z",
+        "Photo": "public/img/jdr.jpg",
+        "Adresse": "string",
+        "DateCreation": "2017-04-14T18:29:11.511Z",
+      }
+    ], function(err, events) {
+    if (err) throw err;
+
+    console.log('Created events:', events);
+
+    });
+
+    Commande.create([
+        {
+          "Prix": 52,
+          "Date": "2017-04-16T20:22:14.391Z",
+        }
+    ], function(err, commandes) {
+        if(err) throw err;
+
+        console.log('Created commandes:', commandes);
+    });
+
+    Commande.create([
+        {
+          "Prix": 70,
+          "Date": "2017-04-16T20:22:14.391Z",
+        }
+    ], function(err, commandes) {
+        if(err) throw err;
+
+        console.log('Created commandes:', commandes);
+    });
+    
+    Commande.create([
+        {
+          "Prix": 40,
+          "Date": "2017-04-16T20:22:14.391Z",
+        }
+    ], function(err, commandes) {
+        if(err) throw err;
+
+        console.log('Created commandes:', commandes);
+    });
+
+    Commande.create([
+        {
+          "Prix": 43,
+          "Date": "2017-04-16T20:22:14.391Z",
+        }
+    ], function(err, commandes) {
+        if(err) throw err;
+
+        console.log('Created commandes:', commandes);
     });
 };
 
