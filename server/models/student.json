@@ -1,6 +1,6 @@
 {
-  "name": "student",
-  "plural": "students",
+  "name": "Student",
+  "plural": "Students",
   "base": "User",
   "idInjection": true,
   "options": {
@@ -13,26 +13,16 @@
     "firstname": {
       "type": "string"
     },
-    "email": {
-      "type": "string",
-      "required": true
-    },
     "birthdate": {
       "type": "date"
-    },
-    "studentId": {
-      "type": "string"
     },
     "password": {
       "type": "string",
       "required": true
     },
-    "cardStatus": {
-      "type": "string"
-    },
-    "Ycoin": {
-      "type": "number",
-      "default": 0
+    "statusAdherent": {
+      "type": "boolean",
+      "default": false
     },
     "picture": {
       "type": "string"
@@ -41,7 +31,7 @@
       "type": "string"
     },
     "phone": {
-      "type": "number"
+      "type": "string"
     }
   },
   "validations": [],
@@ -49,11 +39,6 @@
     "commentaireEvents": {
       "type": "hasMany",
       "model": "CommentaireEvent",
-      "foreignKey": ""
-    },
-    "badges": {
-      "type": "hasMany",
-      "model": "Badge",
       "foreignKey": ""
     },
     "droits": {
@@ -66,6 +51,21 @@
       "model": "Role",
       "foreignKey": "principalId",
       "through": "RoleMapping"
+    },
+    "commandes": {
+      "type": "hasMany",
+      "model": "Commande",
+      "foreignKey": ""
+    },
+    "house": {
+      "type": "belongsTo",
+      "model": "House",
+      "foreignKey": ""
+    },
+    "yPoints": {
+      "type": "hasMany",
+      "model": "YPoint",
+      "foreignKey": ""
     }
   },
   "acls": [

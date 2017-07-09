@@ -12,6 +12,9 @@
     },
     "Date": {
       "type": "date"
+    },
+    "Description": {
+      "type": "String"
     }
   },
   "validations": [],

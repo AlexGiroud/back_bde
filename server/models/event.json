@@ -17,6 +17,9 @@
     "Prix": {
       "type": "number"
     },
+    "Points": {
+      "type": "number"
+    },
     "DateEvent": {
       "type": "date"
     },

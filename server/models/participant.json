@@ -22,6 +22,11 @@
       "type": "belongsTo",
       "model": "Event",
       "foreignKey": ""
+    },
+    "students": {
+      "type": "hasOne",
+      "model": "student",
+      "foreignKey": ""
     }
   },
   "acls": [

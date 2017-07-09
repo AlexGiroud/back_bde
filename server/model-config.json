@@ -49,15 +49,19 @@
     "dataSource": "mongo",
     "public": true
   },
-  "Badge": {
-    "dataSource": "mongo",
-    "public": true
-  },
   "Droit": {
     "dataSource": "mongo",
     "public": true
   },
-  "student": {
+  "Student": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "House": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "YPoint": {
     "dataSource": "mongo",
     "public": true
   }
